@@ -1,0 +1,21 @@
+@import 
+
+    // Globals
+    './sass/globals/variables',
+    './sass/globals/base',
+    './sass/globals/breakpoints',
+    './sass/globals/fonts',
+    './sass/globals/helpers',
+    './sass/globals/icons',
+    './sass/globals/layout',
+    './sass/globals/utilities',
+
+    // Elements
+    './sass/elements/buttons',
+    './sass/elements/heading',
+    './sass/elements/type',
+
+    // Components
+    './sass/components/cards',
+    './sass/components/header',
+    './sass/components/footer';

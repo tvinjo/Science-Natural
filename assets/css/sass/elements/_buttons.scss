@@ -1,0 +1,38 @@
+button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    margin: 20px;   
+}
+
+.icon {
+    background-image: linear-gradient(165deg, #FFC322 0%, #F28A00 329%);
+    height: 96px;
+    width: 96px;
+    border-radius: 50%;
+    display: block;
+    border: 2px solid #E08000;
+}
+
+i {
+    height: 78px;
+    width: 78px;
+    background: #DD810330;
+    border-radius: 100%;
+    position: relative;
+}
+
+
+.text {
+    background-image: linear-gradient(135deg, #FFC322 0%, #F28A00 79%);
+    border: 2px solid #E08000;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 1.5625rem;
+    padding: 18px 40px 17px 20px;
+    margin-left: -18px;
+    border-left: 0;
+    border-radius: 0 8px 8px 0;
+}
+

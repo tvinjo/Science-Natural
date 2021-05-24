@@ -1,0 +1,454 @@
+.hero {
+        position: relative;
+        z-index: 1;
+        height: 676px;
+        width: 100%;
+        background-color: #FFF5EB;
+        background-position: right -90px;
+        background-repeat: no-repeat;
+        background-image: url("../img/bg/moring-bg.png");
+
+
+    .description {
+        margin-top: 122px;
+        margin-bottom: 108px;
+    }
+    
+    h3 {
+        padding: 6px 26px 0px;
+        background-color: #095522;
+        display: inline-block;
+        border-radius: 8px;
+        margin: 0;
+        line-height: normal;
+    }
+
+    h1 {
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+
+    button {
+        margin: 0 auto;
+    }
+
+    .moringa-tablets {
+        position: absolute;
+        margin-top: 227px;
+    }
+
+    @include breakpoint('md') {   
+        height: 600px;
+        h1 {
+            font-size: 2.8125rem;
+        }
+
+        h3 {
+            margin-top: -15px;
+            font-size: 1.25rem;
+        }
+        
+        .moringa-tablets {
+            display: none;
+        } 
+
+        button {
+            margin: 50px auto 0;
+        }
+    }
+
+    @include breakpoint('sm') {    
+        h1 {
+            font-size: 1.875rem;
+            color: $white;
+        }
+
+        h3 {
+            margin-top: -45px;
+        }
+    }
+}
+
+.pure-moringa {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    background-color: #FBF9F8;
+    background-size: contain;
+    background-position: -90px bottom;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg/woman.png");
+    
+    h2 {
+        margin-top: 126px;
+        margin-bottom: 32px;
+    }
+
+    p {
+        font-size: 1.75rem;
+        color: $green-200;
+    } 
+
+    .banner {
+        background-color: $green-100;
+        border-radius: 8px;
+        // background-image: url("../img/moringa\ leaves\ 1.png");
+        background-repeat: no-repeat;
+        padding: 82px 0;
+        margin: 97px auto 0;
+
+        .benefits {
+            padding: 0 36px;
+
+            img {
+                margin-top: 0;
+                margin-bottom: 28px;
+            }
+
+            p { 
+                font-size: 1.3125rem;
+                color: $white;
+                font-weight: 700;
+                margin-bottom: 0;
+                width: 224px;
+            }
+        }
+    }  
+    
+    @include breakpoint('md') {  
+
+        h2 {
+            font-size: 2.8125rem;
+        }
+
+        p {
+            font-size: 1.25rem;
+        }
+
+        .banner{
+            display: flex!important;
+            align-items: start!important;
+            padding: 30px 0;
+            margin: 0px 40px 0;    
+            
+            .benefits-wrapper {
+                display: flex!important;
+                align-items: start!important;
+            
+                .benefits {
+                    img {
+                        margin-top: 30px;
+                        margin-bottom: 0;
+                    }
+                    
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    @include breakpoint('sm') {    
+        background: none;
+
+        h2 {
+            font-size: 1.5625rem;
+            margin: 50px 0 30px;
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+        .banner {
+            margin: 0;
+        }
+    }
+}
+    
+.moringa-leaves {
+    background-image: url("../img/bg/moringa\ leaves.png");
+    position: relative;
+    z-index: -1;
+    height: 700px;
+    width: 100%;
+    background-size: contain;
+    background-position: -115px -90px;
+    background-repeat: repeat;
+
+    @include breakpoint('md') {  
+        background-position: center -90px;
+        background-repeat: no-repeat;
+    }
+    @include breakpoint('sm') {    
+        background-position: center 122px;
+    }
+}
+
+.experience {
+    background-color: $green-100;
+    position: relative;
+    top: -230px;
+
+    h4 {
+        margin-top: 49px;
+    }
+
+    p {
+        font-size: 1.3125rem;
+        font-weight: 700;
+        color: $white;
+    }
+
+    .symptoms {
+        flex: 0 0 33%;
+    }
+
+
+    .ultimate {
+        background-color: #00000015;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 55px;
+
+        img {
+            position: absolute;
+            bottom: -120px;
+            right: 60px;
+
+        }
+    }
+
+    @include breakpoint('md') {  
+        margin-top: -50px;
+
+        h4 {
+            font-size: 2.75rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        .single-bottle {
+            display: none;
+        } 
+        
+        .ultimate {
+            font-size: 2.75rem;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+    @include breakpoint('sm') {  
+        margin-top: -135px;
+        
+        h4 {
+            font-size: 1.875rem;
+            margin: 30px 0 0;
+        }
+        h5 {
+            font-size: 1.875rem;
+            margin: 0;
+        }
+        .symptoms {
+            flex: 0 0 50%;
+        }
+        .ultimate {
+            margin: 30px 0 0;
+            padding: 30px 0;
+        }
+    }
+}
+
+.product {
+    margin-top: -130px;
+
+    &-bg {
+        background: #FFFFFF;
+        box-shadow: 0 9px 81px 0 rgba(0,0,0,0.14);
+        border-radius: 15px;
+        background-image: url("../img/bg/faded\ moringa.png");
+        position: relative;
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+
+    .wrapper {
+        padding: 0 60px;
+    }
+
+    h6 {
+        margin-top: 76px;
+    }
+    
+    strong {
+        font-weight: 700;
+    }
+
+    .circle {
+        position: relative;
+        width: 262px;
+        height: 262px;
+        background-color: $green-100;
+        border-radius: 100%;
+        top: 30px;
+        right: 25px;
+        transform: rotate(25deg);
+
+        .buy {
+            color: $white;
+            width: 192px;
+            line-height: 1;
+            margin-top: 35px;
+            margin-bottom: 0;
+        }
+        .save {
+            font-size: 1.375rem;
+            font-weight: 700;
+            color: $green-100;
+            background: $white;
+            border-radius: 2px;
+            display: inline-block;
+            margin-bottom: 0;
+        }
+    }
+
+    img {
+        margin: 0;
+    }
+
+    .free-bg {
+        background: #F2F8ED;
+        border-radius: 2px;
+        margin-top: -55px;
+        padding: 0 20px;
+
+            .promo {
+                color: $green-100;
+                font-weight: 700;
+                margin-top: 63px;
+            }
+
+            .guarantee {
+                padding-top: 34px;
+                background: #D3E2C740;
+                border-radius: 15px;
+                margin: auto;
+
+                &-description {
+                    font-size: 1.0625rem;
+                    font-weight: 700;
+                    color: $green-100;
+                    width: 150px;
+                }
+    
+            .upgrade {
+                padding-top: 13px;
+                padding-bottom: 9px;
+                color: $white;
+                background: #095522;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+        }
+
+        .trusted {
+            margin-top: -30px;
+        }
+
+        .discount-bg {
+            margin: 15px auto 0;
+            background: #D3E2C740;
+            border-radius: 15px;
+            padding: 20px 37px;
+
+            .regular {
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: $green-100;
+                background: #D0DAC6;
+                border-radius: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            .price {
+                .sign {
+                    font-size: 4.1875rem;
+                    font-weight: 700;
+                    color: $green-100;
+                }
+                .x {
+                    font-size: 7.875rem;
+                    font-weight: 600;
+                    color: $green-100;
+                    line-height: 128px;
+                    margin-bottom: 0;
+                }
+            }
+            button {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    @include breakpoint('md') {    
+        .circle {
+            top: 35px;
+            right: 115px;
+        } 
+
+        .free-bg .trusted {
+            margin-top: 70px;
+            padding-bottom: 25px;  
+        }
+    }
+    @include breakpoint('sm') {    
+        .product-bg {
+            background: none;
+        }
+
+        h6 {
+            font-size: 2.5rem;
+            margin-top: 50px;
+        }
+        .circle {
+            display: none!important;
+        }
+
+        img {
+            margin-top: 30px;
+        }
+
+        .promo {
+            font-size: 2.3125rem;
+            margin-top: 75px;
+        }
+
+        .free-bg .trusted {
+            margin-top: 30px;
+            padding-bottom: 25px;
+        }
+         .regular {
+            font-size: 1rem;
+        }
+        .free-bg .discount-bg {
+            padding: 20px 10px;
+        }
+
+        button {
+            .text {
+                font-size: 14PX;
+                padding: 10px 40px 10px 20px;
+                margin-left: -13px;
+                border-left: 0;
+                border-radius: 0 8px 8px 0;
+            }
+        }
+    }
+}
+
+
+        
+
+           
